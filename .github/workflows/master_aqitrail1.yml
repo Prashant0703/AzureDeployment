@@ -28,12 +28,7 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        run: pip install --upgrade pip
-       
-      - name: Install dependencies
         run: pip install -r requirements.txt
-
-
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
@@ -65,4 +60,4 @@ jobs:
         with:
           app-name: 'AQItrail1'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C8114C80B1D746CE99D1E913CDA97CCB }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_02DEC73645384E74871A326BEDBA61C3 }}
